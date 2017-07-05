@@ -14,12 +14,13 @@ export class SearchPage {
 
 	}
 
-	ngOnInit(){
-		this.getPosts('unicorns', 30)
-	}
 
-	getPosts(category, limit) {
-		this.giphyService.getPosts(category, limit).subscribe(response => {
+	getPosts($event) {
+		let query = document.getElementsByClassName('searchbar-input')[0];
+		console.log(query)
+
+		let limit = 20;
+		this.giphyService.getPosts(query, limit).subscribe(response => {
 			console.log(response)
 			this.items = response.data;
 		})

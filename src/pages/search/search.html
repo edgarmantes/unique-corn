@@ -1,5 +1,5 @@
 <ion-header>
-  <ion-navbar>
+  <ion-navbar color="primary">
     <ion-title>
       Search Other Things
     </ion-title>
@@ -8,6 +8,11 @@
 
 <ion-content padding>
 	<ion-list class="card-background-page">
+		<ion-item>
+			<form actions="." method="get" (submit)="getPosts($event)">
+				<ion-searchbar id="search"  type="text" placeholder="Cats, Ponies, more Unicorns!!!..."></ion-searchbar>
+			</form>
+		</ion-item>
 		<ion-item *ngFor="let item of items">
 			  <ion-card>
 			    <img src="{{item.images.fixed_height.url}}"/>

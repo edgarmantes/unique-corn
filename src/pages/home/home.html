@@ -8,11 +8,12 @@
   <ion-list class="card-background-page">
     <ion-item class="tile" *ngFor="let item of items">
 
-          <img src="{{item.images.fixed_height.url}}"/>
+          <button class="image-btn" (click)="viewGif(item)"><img src="{{item.images.fixed_height.url}}"/></button>
           <a  href="{{item.images.fixed_height.url}}" target="_blank"><div class="card-tags">Source</div></a>
           
     </ion-item>
   </ion-list>
+
   <ion-infinite-scroll (ionInfinite)="doInfinite($event)">
      <ion-infinite-scroll-content></ion-infinite-scroll-content>
    </ion-infinite-scroll>
