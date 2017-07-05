@@ -1,3 +1,48 @@
 page-home {
 
 }
+
+.card-background-page {
+
+  align-items: center;
+
+  ion-card {
+    position: relative;
+    text-align: center;
+
+  }
+
+  .card-tags {
+    /*position: absolute;*/
+    bottom: 10px;
+    left: 10px;
+    font-size: 0.8em;
+    font-weight: bold;
+    color: gray;
+  }
+
+  .card-subtitle {
+    font-size: 1.0em;
+    top: 52%;
+    width: 100%;
+    color: rgb(0,0,0);
+  }
+
+
+  .tile {
+    display: inline-block;
+    width: 50%;
+
+
+    a {
+      text-decoration: none;
+    }
+
+    img {
+      width: 100%;
+      display: inline-block;
+
+    }
+  }
+
+}

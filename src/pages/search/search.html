@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Search Other Things
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+	<ion-list class="card-background-page">
+		<ion-item *ngFor="let item of items">
+			  <ion-card>
+			    <img src="{{item.images.fixed_height.url}}"/>
+			    <div class="card-title">São Paulo</div>
+			    <div class="card-subtitle">41 Listings</div>
+			  </ion-card>
+		</ion-item>
+	</ion-list>
+</ion-content>
