@@ -16,7 +16,7 @@ export class SearchPage {
 
 
 	getPosts($event) {
-		let query = document.getElementsByClassName('searchbar-input')[0];
+		let query = 
 		console.log(query)
 
 		let limit = 20;
