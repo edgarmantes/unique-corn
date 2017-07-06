@@ -5,12 +5,13 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { GiphyService } from './services/giphy.service';
 import { TrendingService } from './services/trending.service';
+import { QuoteService } from './services/quote.service';
 
 import { TabsPage } from '../pages/tabs/tabs';
 
 @Component({
   templateUrl: 'app.html',
-  providers: [GiphyService, TrendingService]
+  providers: [GiphyService, TrendingService, QuoteService]
 })
 export class MyApp {
   rootPage:any = TabsPage;

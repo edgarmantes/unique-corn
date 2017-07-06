@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
+import { QuoteService } from '../../app/services/quote.service';
 
 @Component({
   selector: 'gif',
@@ -20,6 +21,12 @@ export class GifPage {
 
 		let reg = /[-]/g;
 		this.tags = slug.replace(reg, ' #')
+	}
+
+	getPosts(){
+		this.quoteService.getPosts().subscribe(response => {
+			console.log(response)
+		})
 	}
 
 }

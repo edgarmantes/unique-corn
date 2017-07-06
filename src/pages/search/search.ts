@@ -23,7 +23,7 @@ export class SearchPage {
 
 		let limit = 20;
 		this.giphyService.getPosts(query, limit).subscribe(response => {
-			// console.log(response)
+
 			this.items = response.data;
 		})
 	}
