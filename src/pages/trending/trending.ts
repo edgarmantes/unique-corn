@@ -21,21 +21,22 @@ export class TrendingPage {
 		this.getPosts();
 	}
 
+	// makes API call to get the top 3 trending unicorns
 	getPosts(){
-		
+
 		this.trendingService.getPosts().subscribe(response => {
-			this.items = response.data;
-			
+			this.items = response.data;	
 		})
 	}
 
+	// hashing the gifs tags
 	getInfo(item){
 		
 		let slug = "#"+item.slug;
 
-		let reg = /[-]/g;
-		this.tags = slug.replace(reg, ' #')
-		return this.tags
+		let reg = /[-]/g; // removes any "-" marks and replace with a hash mark
+		this.tags = slug.replace(reg, ' #');
+		return this.tags;
 	}
 
 

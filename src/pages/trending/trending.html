@@ -7,10 +7,12 @@
 </ion-header>
 
 <ion-content class="trend-card-background-page" padding >
-	<ion-list *ngFor="let item of items" class="search-card-background-page">
+	<ion-list *ngFor="let item of items;let i = index" class="trending-card">
 		<ion-item >
-			<ion-card ngOnInit="getInfo(item)">
+			<ion-card ngOnInit="getInfo(item, i)">
 				<img src="{{item.images.fixed_height.url}}"/>
+				<ion-icon class="trend-trophy" name="trophy"></ion-icon>
+				<span class="trend-rank">#{{i+1}}</span>
 				<div class="trend-card-title">{{getInfo(item)}}</div>
 			</ion-card>
 		</ion-item>
