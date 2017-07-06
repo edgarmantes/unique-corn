@@ -17,7 +17,7 @@ export class GifPage {
 
 	ngOnInit(){
 		let slug = "#"+this.item.slug;
-		console.log(slug)
+
 		let reg = /[-]/g;
 		this.tags = slug.replace(reg, ' #')
 	}
