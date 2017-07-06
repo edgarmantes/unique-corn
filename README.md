@@ -48,19 +48,25 @@ Initiate Developer Environment
 ----------
 ### With the Ionic CLI:
 
-Take the name after `ionic2-starter-`, and that is the name of the template to be used when using the `ionic start` command below:
+Navigate to project folder.
+Start server by typing this into the command line:
 
 ```bash
-$ sudo npm install -g ionic cordova
-$ ionic start myTabs tabs
+$ ionic serve
 ```
 
-Then, to run it, cd into `myTabs` and run:
+Then, to run it on simulator, run this code:
 
+On windows computer
 ```bash
-$ ionic cordova platform add ios
+$ ionic cordova run android
+```
+
+On Mac iOS computer
+```bash
 $ ionic cordova run ios
 ```
+
 
 Substitute ios for android if not on a Mac.
 
