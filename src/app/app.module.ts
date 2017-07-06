@@ -5,7 +5,7 @@ import { MyApp } from './app.component';
 import { HttpModule } from '@angular/http';
 
 import { AboutPage } from '../pages/about/about';
-import { ContactPage } from '../pages/contact/contact';
+import { SplashPage } from '../pages/splash/splash';
 import { HomePage } from '../pages/home/home';
 import { SearchPage } from '../pages/search/search';
 import { GifPage } from '../pages/gif/gif';
@@ -19,7 +19,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   declarations: [
     MyApp,
     AboutPage,
-    ContactPage,
+    SplashPage,
     HomePage,
     SearchPage,
     GifPage,
@@ -35,7 +35,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   entryComponents: [
     MyApp,
     AboutPage,
-    ContactPage,
+    SplashPage,
     HomePage,
     SearchPage,
     GifPage,
