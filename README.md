@@ -27,10 +27,10 @@ _________________
 
 Technologies used
 -----
-*Ionic Framework
-*Angular 2
-*ES6 and ES7
-*Giphy API
+* Ionic Framework
+* Angular 2
+* ES6 and ES7
+* Giphy API
 
 
 ###Installation
