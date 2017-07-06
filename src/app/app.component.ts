@@ -7,6 +7,7 @@ import { GiphyService } from './services/giphy.service';
 import { TrendingService } from './services/trending.service';
 import { QuoteService } from './services/quote.service';
 
+import { SplashPage } from '../pages/splash/splash';
 import { TabsPage } from '../pages/tabs/tabs';
 
 @Component({
@@ -14,7 +15,7 @@ import { TabsPage } from '../pages/tabs/tabs';
   providers: [GiphyService, TrendingService, QuoteService]
 })
 export class MyApp {
-  rootPage:any = TabsPage;
+  rootPage:any = SplashPage;
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
     platform.ready().then(() => {
