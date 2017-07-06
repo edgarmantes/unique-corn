@@ -15,13 +15,12 @@ export class SearchPage {
 	}
 
 
-	getPosts($event) {
-		let query = 
-		console.log(query)
+	getPosts(value: string) {
+		let query = value;
 
 		let limit = 20;
 		this.giphyService.getPosts(query, limit).subscribe(response => {
-			console.log(response)
+			// console.log(response)
 			this.items = response.data;
 		})
 	}

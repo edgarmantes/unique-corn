@@ -6,19 +6,17 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
+<ion-content class="searchBack" padding>
 	<ion-list class="card-background-page">
 		<ion-item>
-			<form actions="." method="get" (submit)="getPosts($event)">
-				<ion-searchbar id="search"  type="text" placeholder="Cats, Ponies, more Unicorns!!!..."></ion-searchbar>
-			</form>
+			<ion-searchbar #search (keyup)="getPosts(search.value)" id="search"  type="text" placeholder="Cats, Ponies, more Unicorns!!!..."></ion-searchbar>
 		</ion-item>
 		<ion-item *ngFor="let item of items">
-			  <ion-card>
-			    <img src="{{item.images.fixed_height.url}}"/>
-			    <div class="card-title">São Paulo</div>
-			    <div class="card-subtitle">41 Listings</div>
-			  </ion-card>
+		  <ion-card>
+		    <img src="{{item.images.fixed_height.url}}"/>
+		    <div class="card-title">São Paulo</div>
+		    <div class="card-subtitle">41 Listings</div>
+		  </ion-card>
 		</ion-item>
 	</ion-list>
 </ion-content>
