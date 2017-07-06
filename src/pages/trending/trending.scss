@@ -7,5 +7,24 @@
 }
 
 .trend-card-background-page {
+	background-image: url("../assets/img/UnicornGray.png");
+	background-size: 300px;
+	background-repeat: no-repeat;
+	background-position: center;
+	overflow-y: hidden;
 	background-color: lightgray;
+}
+
+.trending-card > .item {
+	background-color: transparent;
+}
+
+.trend-trophy {
+	margin-top: 10px;
+    margin-left: 40%;
+}
+
+.trend-rank {
+	font-size: 22px;
+    font-weight: bold;
 }

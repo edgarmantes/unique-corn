@@ -9,7 +9,7 @@ export class QuoteService {
 
 	constructor(http:Http) {
 		this.http = http;
-		this.baseUrl = "http://sunnyquotes.net/q.php?random";
+		this.baseUrl = "http://api.icndb.com/jokes/random";
 	}
 
 	getPosts(){
