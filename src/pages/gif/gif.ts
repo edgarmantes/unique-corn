@@ -11,7 +11,7 @@ export class GifPage {
 	item: any;
 	tags: any;
 
-	constructor(public navCtrl: NavController, public params:NavParams) {
+	constructor(public navCtrl: NavController, public params:NavParams, private quoteService:QuoteService) {
 		this.item = params.get('item');
 		
 	}
@@ -25,7 +25,7 @@ export class GifPage {
 
 	getPosts(){
 		this.quoteService.getPosts().subscribe(response => {
-			console.log(response)
+			// console.log(response)
 		})
 	}
 
