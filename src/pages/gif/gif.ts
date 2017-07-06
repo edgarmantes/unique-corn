@@ -10,10 +10,10 @@ export class GifPage {
 	
 	item: any;
 	tags: any;
+	joke: any;
 
 	constructor(public navCtrl: NavController, public params:NavParams, private quoteService:QuoteService) {
 		this.item = params.get('item');
-		
 	}
 
 	ngOnInit(){
@@ -21,11 +21,13 @@ export class GifPage {
 
 		let reg = /[-]/g;
 		this.tags = slug.replace(reg, ' #')
-	}
 
-	getPosts(){
+
 		this.quoteService.getPosts().subscribe(response => {
-			// console.log(response)
+			
+			this.joke = response.value.joke 
+		
+			return
 		})
 	}
 

@@ -9,11 +9,11 @@ export class QuoteService {
 
 	constructor(http:Http) {
 		this.http = http;
-		this.baseUrl = "https://en.wikipedia.org/w/api.php?action=query&titles=Main%20Page&prop=revisions&rvprop=content&format=json";
+		this.baseUrl = "http://api.icndb.com/jokes/random";
 	}
 
 	getPosts(){
 		return this.http.get(this.baseUrl)
-			.map(res => res);
+			.map(res => res.json());
 	}
 }

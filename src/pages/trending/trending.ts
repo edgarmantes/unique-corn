@@ -22,6 +22,7 @@ export class TrendingPage {
 	}
 
 	getPosts(){
+		
 		this.trendingService.getPosts().subscribe(response => {
 			this.items = response.data;
 			
@@ -29,7 +30,7 @@ export class TrendingPage {
 	}
 
 	getInfo(item){
-		console.log(item)		
+		
 		let slug = "#"+item.slug;
 
 		let reg = /[-]/g;

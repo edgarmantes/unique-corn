@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { GiphyService } from '../../app/services/giphy.service';
+import { QuoteService } from '../../app/services/quote.service';
 import { GifPage } from '../gif/gif';
 
 @Component({
@@ -10,8 +11,9 @@ import { GifPage } from '../gif/gif';
 export class HomePage {
 
  	items: any; 
+ 	joke: any;
 
-	constructor(public navCtrl: NavController, private giphyService:GiphyService) {
+	constructor(public navCtrl: NavController, private giphyService:GiphyService, private quoteService:QuoteService) {
 
 	}
 
@@ -48,9 +50,11 @@ export class HomePage {
 	}
 
 	viewGif(item) {
+
 		this.navCtrl.push(GifPage, {
-			item:item
+			item:item,
 		});
+
 	}
 
 
