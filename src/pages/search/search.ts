@@ -9,6 +9,9 @@ import { GiphyService } from '../../app/services/giphy.service';
 export class SearchPage {
 
  	items: any; 
+	
+	item: any;
+	tags:any;
 
 	constructor(public navCtrl: NavController, private giphyService:GiphyService) {
 
@@ -23,6 +26,15 @@ export class SearchPage {
 			// console.log(response)
 			this.items = response.data;
 		})
+	}
+
+	getInfo(item){
+				
+		let slug = "#"+item.slug;
+
+		let reg = /[-]/g;
+		this.tags = slug.replace(reg, ' #')
+		return this.tags
 	}
 
 }
