@@ -4,12 +4,13 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { GiphyService } from './services/giphy.service';
+import { TrendingService } from './services/trending.service';
 
 import { TabsPage } from '../pages/tabs/tabs';
 
 @Component({
   templateUrl: 'app.html',
-  providers: [GiphyService]
+  providers: [GiphyService, TrendingService]
 })
 export class MyApp {
   rootPage:any = TabsPage;
@@ -23,3 +24,5 @@ export class MyApp {
     });
   }
 }
+
+

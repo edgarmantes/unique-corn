@@ -8,6 +8,22 @@ search {
 	background-repeat: no-repeat;
 	background-position: center;
 	overflow-y: hidden;
+	background-color: lightgray;
+}
+
+.search-card-background-page  {
+
+	.item {
+		background-color: lightgray;
+	}
+}
+
+.search-card-title {
+	text-overflow: ellipsis;
+    overflow: hidden;
+    width: 90%;
+    margin: 10px 5px;
+    font-weight: bold;
 
 }
 

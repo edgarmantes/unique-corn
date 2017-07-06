@@ -9,6 +9,7 @@ import { ContactPage } from '../pages/contact/contact';
 import { HomePage } from '../pages/home/home';
 import { SearchPage } from '../pages/search/search';
 import { GifPage } from '../pages/gif/gif';
+import { TrendingPage } from '../pages/trending/trending';
 import { TabsPage } from '../pages/tabs/tabs';
 
 import { StatusBar } from '@ionic-native/status-bar';
@@ -22,6 +23,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     HomePage,
     SearchPage,
     GifPage,
+    TrendingPage,
     TabsPage
   ],
   imports: [
@@ -37,6 +39,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     HomePage,
     SearchPage,
     GifPage,
+    TrendingPage,
     TabsPage
   ],
   providers: [
