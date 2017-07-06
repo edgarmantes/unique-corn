@@ -33,7 +33,7 @@ Technologies used
 * Giphy API
 
 
-###Installation
+### Installation
 
 Initiate Developer Environment
 ----------
