@@ -4,7 +4,6 @@ import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
 import { HttpModule } from '@angular/http';
 
-import { AboutPage } from '../pages/about/about';
 import { SplashPage } from '../pages/splash/splash';
 import { HomePage } from '../pages/home/home';
 import { SearchPage } from '../pages/search/search';
@@ -18,7 +17,6 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 @NgModule({
   declarations: [
     MyApp,
-    AboutPage,
     SplashPage,
     HomePage,
     SearchPage,
@@ -28,13 +26,12 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   ],
   imports: [
     BrowserModule,
-    HttpModule,
+    HttpModule, // Needed for Service API calls
     IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    AboutPage,
     SplashPage,
     HomePage,
     SearchPage,

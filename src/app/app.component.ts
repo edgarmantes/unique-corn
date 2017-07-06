@@ -15,7 +15,7 @@ import { TabsPage } from '../pages/tabs/tabs';
   providers: [GiphyService, TrendingService, QuoteService]
 })
 export class MyApp {
-  rootPage:any = SplashPage;
+  rootPage:any = SplashPage; // App enters and starts by first loading up the SplashPage
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
     platform.ready().then(() => {
